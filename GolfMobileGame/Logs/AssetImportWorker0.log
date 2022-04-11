@@ -1,0 +1,100 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'pl' Physical Memory: 7988 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Karol/_Repository/GolfMobileGame/GolfMobileGame/GolfMobileGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50571
+Successfully changed project path to: C:/Karol/_Repository/GolfMobileGame/GolfMobileGame/GolfMobileGame
+C:/Karol/_Repository/GolfMobileGame/GolfMobileGame/GolfMobileGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 82.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Karol/_Repository/GolfMobileGame/GolfMobileGame/GolfMobileGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   
+    VRAM:     3994 MB
+    Driver:   27.20.100.8729
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001489 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 52.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.590 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000589 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.212 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1115 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.1 MB.
+System memory in use after: 57.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1557.
+Total: 1.892800 ms (FindLiveObjects: 0.136500 ms CreateObjectMapping: 0.034600 ms MarkObjects: 1.648200 ms  DeleteObjects: 0.072500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(e69b552a82392914f97090b20361dfa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(e69b552a82392914f97090b20361dfa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e72503948ac2d0106c4152e621d396') in 0.011506 seconds
+  Import took 0.014559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.303915 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.028296 seconds
+  Import took 0.043652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.033743 seconds.
+  path: Assets/Contennt
+  artifactKey: Guid(a53f123ed865a304d90d3742cea6cd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Contennt using Guid(a53f123ed865a304d90d3742cea6cd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff6dbe088a5fb437caf794b986f4df2') in 0.028336 seconds
+  Import took 0.035077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.342751 seconds.
+  path: Assets/Content
+  artifactKey: Guid(a53f123ed865a304d90d3742cea6cd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Content using Guid(a53f123ed865a304d90d3742cea6cd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7772f67860e4ed256f74f9eb0e91b6c') in 0.025115 seconds
+  Import took 0.032715 seconds .
+
