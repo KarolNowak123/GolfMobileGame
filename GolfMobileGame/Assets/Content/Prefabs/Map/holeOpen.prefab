@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1526778527215948597}
   - component: {fileID: 2494975976248286352}
   - component: {fileID: 394935950682712154}
+  - component: {fileID: -7868253186856230069}
   m_Layer: 0
   m_Name: holeOpen
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7868253186856230069
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196600308536625551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1484217041801112989, guid: da5fef125ff70ed42944cb66a9ce330c, type: 3}

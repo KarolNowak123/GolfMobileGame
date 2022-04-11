@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2899219756901667225}
   - component: {fileID: 2275376191921987132}
   - component: {fileID: 4068780019104934646}
+  - component: {fileID: 456022307933200720}
   m_Layer: 0
   m_Name: gap
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &456022307933200720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555733065089108771}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5342380858405048795, guid: d3699af42a5af83449ca124fdb5aa685, type: 3}

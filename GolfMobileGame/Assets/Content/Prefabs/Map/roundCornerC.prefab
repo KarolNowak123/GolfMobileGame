@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5472322312864786908}
   - component: {fileID: 8961674745207645817}
   - component: {fileID: 6609794392421044915}
+  - component: {fileID: -5542749206606080605}
   m_Layer: 0
   m_Name: roundCornerC
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5542749206606080605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4664120125800035174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6822593477789695266, guid: 0e9f73dfa550db943b746a92d033b898, type: 3}

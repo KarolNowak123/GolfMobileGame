@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2738005989777441520}
   - component: {fileID: 1319698064002026837}
   - component: {fileID: 3869846812756834719}
+  - component: {fileID: 703758156822931658}
   m_Layer: 0
   m_Name: castle
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &703758156822931658
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365465851781437514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 726112268055120517, guid: 8517a3cd17fbd244ab8a12b078c7b99f, type: 3}
