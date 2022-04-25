@@ -8,11 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 startPosition, endPosition;
     private Vector3 shootPlayer;
     private bool movePlayer;
+    private Vector3 previousPosition;
+
     [SerializeField]
     private Rigidbody playerTransform;
     [SerializeField]
     private float moveSpeed;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.touchCount>0)
+        if (Input.touchCount>0 && playerTransform.velocity.x == 0 && playerTransform.velocity.z == 0)
         {
             theTouch = Input.GetTouch(0);
             if(theTouch.phase == TouchPhase.Began)
