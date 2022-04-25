@@ -40,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
         
         if(movePlayer)
         {
-            shootPlayer.x = (endPosition.x - startPosition.x);
-            shootPlayer.z = (endPosition.y - startPosition.y);
+            shootPlayer.x = (endPosition.y - startPosition.y) ;
+            shootPlayer.z = (endPosition.x - startPosition.x) * -1;
             shootPlayer.y = 0;
 
             playerTransform.AddForce(shootPlayer *-1 * moveSpeed);
