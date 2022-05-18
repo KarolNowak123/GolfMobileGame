@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerTransform;
     [SerializeField]
     private float moveSpeed;
+    [SerializeField]
+    private float stopBall;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer();
             movePlayer = false;
         }
+        if(playerTransform.velocity.magnitude<stopBall)
+        {
+            playerTransform.velocity = Vector3.zero;
+        }
+        Debug.Log(playerTransform.velocity.magnitude);
      }
 
     void MovePlayer()

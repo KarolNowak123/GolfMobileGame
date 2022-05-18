@@ -129,3 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 2342426251325817172}
   moveSpeed: 1
+  stopBall: 0.1
