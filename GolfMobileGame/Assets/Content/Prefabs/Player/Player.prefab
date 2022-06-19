@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2342426251325817172}
   - component: {fileID: -7693727083039321444}
   m_Layer: 0
-  m_Name: ball_red
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,3 +130,4 @@ MonoBehaviour:
   playerTransform: {fileID: 2342426251325817172}
   moveSpeed: 1
   stopBall: 0.1
+  cameraRotation: {fileID: 0}

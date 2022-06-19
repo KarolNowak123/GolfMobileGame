@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private float stopBall;
+    [SerializeField]
+    private Transform cameraRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
             playerTransform.velocity = Vector3.zero;
         }
-        Debug.Log(playerTransform.velocity.magnitude);
+     
      }
 
     void MovePlayer()
@@ -47,6 +49,12 @@ public class PlayerMovement : MonoBehaviour
             shootPlayer.x = (endPosition.y - startPosition.y);
             shootPlayer.z = (endPosition.x - startPosition.x) * -1;
             shootPlayer.y = 0;
+
+        shootPlayer.x = shootPlayer.x * Mathf.Cos(cameraRotation.rotation.y ) - shootPlayer.z * Mathf.Sin(cameraRotation.rotation.y );
+        shootPlayer.z = shootPlayer.x * Mathf.Sin(cameraRotation.rotation.y ) + shootPlayer.z + Mathf.Cos(cameraRotation.rotation.y );
+
+            //Quaternion rotate = Quaternion.Euler(cameraRotation.transform.rotation.z, cameraRotation.transform.rotation.x, cameraRotation.transform.rotation.z);
+            //shootPlayer *=rotate;
             playerTransform.AddForce(shootPlayer * -1 * moveSpeed);
             //playerTransform.AddForce += (endPosition.y - startPosition.y) * moveSpeed * Time.deltaTime;
     }
@@ -56,12 +64,13 @@ public class PlayerMovement : MonoBehaviour
         theTouch = Input.GetTouch(0);
         if (theTouch.phase == TouchPhase.Began)
         {
-            startPosition = theTouch.position;
+            startPosition = theTouch.position ;
+            Debug.Log(theTouch.position);
         }
         if (theTouch.phase == TouchPhase.Ended)
         {
             //Debug.Log(movePlayer);
-            endPosition = theTouch.position;
+            endPosition = theTouch.position ;
             movePlayer = true;
         }
 
