@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,14 +49,17 @@ public class PlayerMovement : MonoBehaviour
         
             shootPlayer.x = (endPosition.y - startPosition.y);
             shootPlayer.z = (endPosition.x - startPosition.x) * -1;
-            
-            shootPlayer.y = 0;
-            shootPlayer.x = shootPlayer.x * Mathf.Cos(cameraRotation.rotation.x ) - shootPlayer.z * Mathf.Sin(cameraRotation.rotation.y );
-            shootPlayer.z = shootPlayer.x * Mathf.Sin(cameraRotation.rotation.x ) + shootPlayer.z + Mathf.Cos(cameraRotation.rotation.y );
 
-            //Quaternion rotate = Quaternion.Euler(cameraRotation.transform.rotation.z, cameraRotation.transform.rotation.x, cameraRotation.transform.rotation.z);
-            //shootPlayer *=rotate;
-            playerTransform.AddForce(shootPlayer * -1 * moveSpeed);
+        shootPlayer.y = 0;
+        //shootPlayer.x = (float)(shootPlayer.x * Math.Cos(cameraRotation.rotation.x ) - shootPlayer.z * Math.Sin(cameraRotation.rotation.y ));
+        //shootPlayer.z = (float)(shootPlayer.x * Math.Sin(cameraRotation.rotation.x ) + shootPlayer.z + Math.Cos(cameraRotation.rotation.y ));
+        Quaternion rot = Quaternion.Euler(0, cameraRotation.rotation.y, 0);
+        //Quaternion rotate = Quaternion.Euler(cameraRotation.transform.rotation.z, cameraRotation.transform.rotation.x, cameraRotation.transform.rotation.z);
+        //shootPlayer *=rotate;
+        shootPlayer.x = shootPlayer.x * rot.y;
+        rot = Quaternion.Euler(cameraRotation.rotation.x, 0, 0);
+        shootPlayer.z = shootPlayer.z * rot.x;
+        playerTransform.AddForce(shootPlayer * -1 * moveSpeed);
             //playerTransform.AddForce += (endPosition.y - startPosition.y) * moveSpeed * Time.deltaTime;
     }
     bool TouchControler()
