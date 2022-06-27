@@ -48,10 +48,10 @@ public class PlayerMovement : MonoBehaviour
         
             shootPlayer.x = (endPosition.y - startPosition.y);
             shootPlayer.z = (endPosition.x - startPosition.x) * -1;
+            
             shootPlayer.y = 0;
-
-        shootPlayer.x = shootPlayer.x * Mathf.Cos(cameraRotation.rotation.y ) - shootPlayer.z * Mathf.Sin(cameraRotation.rotation.y );
-        shootPlayer.z = shootPlayer.x * Mathf.Sin(cameraRotation.rotation.y ) + shootPlayer.z + Mathf.Cos(cameraRotation.rotation.y );
+            shootPlayer.x = shootPlayer.x * Mathf.Cos(cameraRotation.rotation.x ) - shootPlayer.z * Mathf.Sin(cameraRotation.rotation.y );
+            shootPlayer.z = shootPlayer.x * Mathf.Sin(cameraRotation.rotation.x ) + shootPlayer.z + Mathf.Cos(cameraRotation.rotation.y );
 
             //Quaternion rotate = Quaternion.Euler(cameraRotation.transform.rotation.z, cameraRotation.transform.rotation.x, cameraRotation.transform.rotation.z);
             //shootPlayer *=rotate;
