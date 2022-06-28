@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using GameControllerWinLose;
 public class PlayerMovement : MonoBehaviour
 {
     private Touch theTouch;
@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 shootPlayer;
     private bool movePlayer = false;
     private Vector3 previousPosition;
-
+    private bool checkFail = true;
     [SerializeField]
     private Rigidbody playerTransform;
     [SerializeField]
@@ -41,6 +41,15 @@ public class PlayerMovement : MonoBehaviour
         {
             playerTransform.velocity = Vector3.zero;
         }
+        if(transform.position.y < -5f)
+        {
+            if (checkFail)
+            {
+                WinLoseController.Instance.Lose();
+                checkFail = false;
+            }
+        }
+
      
      }
 

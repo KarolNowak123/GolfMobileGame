@@ -15,11 +15,14 @@ namespace GameControllerWinLose
 
         [SerializeField]
         GameObject winPop;
-        
+        [SerializeField]
+        GameObject losePop;
+
         public int lvlCounter = 0;
 
         GameObject lvlInstantiate;
         GameObject winPopInstantiate;
+        GameObject losePopInstantiate;
         // Start is called before the first frame update
 
 
@@ -40,6 +43,12 @@ namespace GameControllerWinLose
         {
             CompletedLvl();
             lvlInstantiate = Instantiate(lvl[Instance.GetLvl()], new Vector3(0, 0, 0), Quaternion.identity);
+        }
+        public void RetryLvl()
+        {
+            Destroy(lvlInstantiate);
+            lvlInstantiate = Instantiate(lvl[Instance.GetLvl()], new Vector3(0, 0, 0), Quaternion.identity);
+            CloseLose();
         }
 
         public void CompletedLvl()
@@ -62,8 +71,12 @@ namespace GameControllerWinLose
 
         public void Lose()
         {
+            losePopInstantiate = Instantiate(losePop);
             Debug.Log("Lose");
         }
-        
+        public void CloseLose()
+        {
+            Destroy(losePopInstantiate);   
+        }
     }
 }
