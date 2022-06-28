@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameControllerWinLose;
 
 public class WinController : MonoBehaviour
-{
-    [SerializeField]
-    WinLoseController winLoseController;
-
-    private void OnTriggerStay(Collider other)
+{    private void OnTriggerEnter(Collider other)
     {
-        winLoseController.Win();
+        WinLoseController.Instance.Win();
     }
 
 
