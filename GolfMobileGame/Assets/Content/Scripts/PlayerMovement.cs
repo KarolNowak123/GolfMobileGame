@@ -53,12 +53,10 @@ public class PlayerMovement : MonoBehaviour
         shootPlayer.y = 0;
         //shootPlayer.x = (float)(shootPlayer.x * Math.Cos(cameraRotation.rotation.x ) - shootPlayer.z * Math.Sin(cameraRotation.rotation.y ));
         //shootPlayer.z = (float)(shootPlayer.x * Math.Sin(cameraRotation.rotation.x ) + shootPlayer.z + Math.Cos(cameraRotation.rotation.y ));
-        Quaternion rot = Quaternion.Euler(0, cameraRotation.rotation.y, 0);
-        //Quaternion rotate = Quaternion.Euler(cameraRotation.transform.rotation.z, cameraRotation.transform.rotation.x, cameraRotation.transform.rotation.z);
-        //shootPlayer *=rotate;
-        shootPlayer.x = shootPlayer.x * rot.y;
-        rot = Quaternion.Euler(cameraRotation.rotation.x, 0, 0);
-        shootPlayer.z = shootPlayer.z * rot.x;
+        //shootPlayer *= Quaternion.Angle(new Quaternion(0f, 0f, 0f, 0f), cameraRotation.rotation);
+
+    
+
         playerTransform.AddForce(shootPlayer * -1 * moveSpeed);
             //playerTransform.AddForce += (endPosition.y - startPosition.y) * moveSpeed * Time.deltaTime;
     }
@@ -73,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (theTouch.phase == TouchPhase.Ended)
         {
+            
             //Debug.Log(movePlayer);
             endPosition = theTouch.position ;
             movePlayer = true;
