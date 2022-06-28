@@ -4,9 +4,15 @@ using UnityEngine;
 using GameControllerWinLose;
 
 public class WinController : MonoBehaviour
-{    private void OnTriggerEnter(Collider other)
+{
+    bool check = true;
+    private void OnTriggerEnter(Collider other)
     {
-        WinLoseController.Instance.Win();
+        if (check)
+        {
+            WinLoseController.Instance.Win();
+            check = false;
+        }
     }
 
 

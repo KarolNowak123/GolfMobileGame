@@ -19,6 +19,7 @@ namespace GameControllerWinLose
         public int lvlCounter = 0;
 
         GameObject lvlInstantiate;
+        GameObject winPopInstantiate;
         // Start is called before the first frame update
 
 
@@ -37,25 +38,26 @@ namespace GameControllerWinLose
         }
         public void NextLvl()
         {
+            CompletedLvl();
             lvlInstantiate = Instantiate(lvl[Instance.GetLvl()], new Vector3(0, 0, 0), Quaternion.identity);
         }
 
         public void CompletedLvl()
         {
-            Destroy(lvlInstantiate, 1.0f);
+            Destroy(lvlInstantiate);
             Instance.SetLvl();
-            NextLvl();
+            CloseWin();
         }
 
         public void Win()
         {
-            winPop.SetActive(true);
+            winPopInstantiate = Instantiate(winPop);
             Debug.Log("Win");
 
         }
         public void CloseWin()
         {
-            winPop.SetActive(false);
+            Destroy(winPopInstantiate);
         }
 
         public void Lose()

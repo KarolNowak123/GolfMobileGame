@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284031762759497662}
-  - component: {fileID: 3480382628674098077}
   - component: {fileID: 3007278500905880330}
   m_Layer: 0
   m_Name: GameController
@@ -33,19 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3480382628674098077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6707624840137708198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3961a1d874cabd147a9e966938984e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvl: {fileID: 348565188545805059, guid: 0062262de3e63cb4786af20d86f44786, type: 3}
 --- !u!114 &3007278500905880330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e300291a6ea42514c99e8c89b48fc28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvl:
+  - {fileID: 348565188545805059, guid: 0062262de3e63cb4786af20d86f44786, type: 3}
+  - {fileID: 3319152920406580596, guid: 1e80707a2fbb98147950cd3590f7cc85, type: 3}
+  winPop: {fileID: 1254425019556871158, guid: 100c87a0cd49049458c2f50fcf74886b, type: 3}
+  lvlCounter: 0
