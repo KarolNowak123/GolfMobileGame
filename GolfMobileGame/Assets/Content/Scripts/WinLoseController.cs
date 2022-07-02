@@ -42,6 +42,8 @@ namespace GameControllerWinLose
         public void NextLvl()
         {
             CompletedLvl();
+            if (lvl.Length <= lvlCounter)
+                lvlCounter = 0;
             lvlInstantiate = Instantiate(lvl[Instance.GetLvl()], new Vector3(0, 0, 0), Quaternion.identity);
         }
         public void RetryLvl()
