@@ -12,6 +12,7 @@ public class WinController : MonoBehaviour
         {
             WinLoseController.Instance.Win();
             check = false;
+            Destroy(other.gameObject);
         }
     }
 
