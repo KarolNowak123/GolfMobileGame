@@ -46,8 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvl:
   - {fileID: 4148474503820554015, guid: 83c07e1d92de29440b74f1e34fc413d7, type: 3}
-  - {fileID: 348565188545805059, guid: f2d0afbc6c6541b46b916617746e3c69, type: 3}
-  - {fileID: 6887077345743627371, guid: 9a8921aafb10a044aa099dfa7ed17ae2, type: 3}
   winPop: {fileID: 1254425019556871158, guid: 100c87a0cd49049458c2f50fcf74886b, type: 3}
   losePop: {fileID: 1254425019556871158, guid: f562a2146aaf25e43afa1120caaba9a4, type: 3}
   lvlCounter: 0
